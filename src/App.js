@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from '@react-navigation/native';
 import LigasList from "./view/LigasList";
 import TeamList from "./view/TeamList";
-import TestApi from "./view/TestApi";
+import Liga from "./view/Liga";
 
 const Stack = createNativeStackNavigator();
 export default props =>{
@@ -26,7 +26,7 @@ export default props =>{
         />
         <Stack.Screen
         name="Liga"
-        component={TeamList}
+        component={Liga}
         options={()=>{
           return{
             title: 'Liga - Campeonato'
@@ -35,7 +35,7 @@ export default props =>{
         />
         <Stack.Screen
         name="TeamList"
-        component={TestApi}
+        component={TeamList}
         options={()=>{
           return{
             title: 'Lista de Times - Por Classificação'
