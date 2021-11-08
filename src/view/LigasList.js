@@ -26,7 +26,7 @@ export default props => {
 
   function getLigasItens({item: data}) {
     return (
-      <ListItem key={data.id} bottomDivider onPress ={()=> props.navigation.navigate('TeamList', data)}>
+      <ListItem key={data.id} bottomDivider onPress ={()=> props.navigation.navigate('Liga', data)}>
         <Avatar size={60} source={{uri: data.logos.light}} />
         <ListItem.Content>
           <ListItem.Title>{data.name}</ListItem.Title>

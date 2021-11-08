@@ -61,7 +61,7 @@ export default ({route, navigation}) => {
             padding: 5,
           }}
           title="Buscar"
-          onPress={()=> navigation.navigate('TestApi', {
+          onPress={()=> navigation.navigate('TeamList', {
               id: dataProps.id,
               ano: selectedAno,
 

@@ -38,7 +38,7 @@ export default props =>{
         component={TeamList}
         options={()=>{
           return{
-            title: 'Lista de Times - Por Classificação'
+            title: 'Times - Por Classificação'
           }
         }}
         />
